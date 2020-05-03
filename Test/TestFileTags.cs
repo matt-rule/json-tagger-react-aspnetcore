@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 using NUnit.Framework;
 using System.Collections.Generic;
 
-namespace Test.DataModel
+namespace Test.BusinessLogic
 {
     public class TestFileTags
     {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace JsonTagger.DataModel
+namespace JsonTagger.EFCompatibleTypes
 {
     public class IndexedFileTagPair
     {

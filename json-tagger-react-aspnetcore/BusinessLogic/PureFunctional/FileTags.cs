@@ -12,13 +12,23 @@ namespace JsonTagger.BusinessLogic
             return
                 tags
                 .Where(x => !String.IsNullOrWhiteSpace(x))
-                .Aggregate("", (x, y) => x == "" ? y : x + ' ' + y);
+                .Aggregate(
+                    "",
+                    (x, y) =>
+                        x == ""
+                        ? y
+                        : x + ' ' + y
+                );
         }
 
         public static string ConvertToJson(IEnumerable<string> tags)
         {
-            string spaceDelimited = ConvertToSpaceDelimitedString(tags);
-            return "{\"tags\":" + JsonConvert.ToString(spaceDelimited) + "}";
+            return
+                "{\"tags\":"
+                + JsonConvert.ToString(
+                    ConvertToSpaceDelimitedString(tags)
+                )
+                + "}";
         }
     }
 }
