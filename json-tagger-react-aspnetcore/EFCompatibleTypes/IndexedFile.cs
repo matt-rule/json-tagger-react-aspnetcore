@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
-namespace JsonTagger.DataModel
+namespace JsonTagger.EFCompatibleTypes
 {
     public class IndexedFile
     {

@@ -27,7 +27,7 @@ namespace Test
         {
             Assert.AreEqual (
                 144,
-                ImageRegion.GetRegionsForImageRect(12, 2000, 1500).Count()
+                ImageRegion.Divide(12, 2000, 1500).Count()
             );
         }
     }

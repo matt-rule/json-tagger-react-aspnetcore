@@ -1,16 +1,8 @@
+using JsonTagger.BasicTypes;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace JsonTagger.DataModel
+namespace JsonTagger.EFCompatibleTypes
 {
-    public enum ImageMatchDecision {
-        ToDecide,
-        KeepFirstOnly,
-        KeepSecondOnly,
-        KeepBothNoMatch,
-        KeepBothSameSet,
-        KeepBothOtherReason
-    }
-
     public class ImageMatch
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
