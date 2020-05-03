@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -29,24 +30,5 @@ namespace JsonTagger.DataModel
         public string CachedShortImageStr { get; set; } = null!;
 
         public ICollection<IndexedFileTagPair> FileTagPairs { get; set; } = null!;
-
-        public string Tags()
-        {
-            List<string> tags = FileTagPairs
-                .Select(x => x.Tag)
-                .Where(x => !String.IsNullOrWhiteSpace(x))
-                .ToList();
-
-            // Might not be required; test with unit test
-            if (tags.Count == 0)
-                return "";
-
-            return tags.Aggregate((x, y) => x + ' ' + y);
-        }
-
-        public string Json()
-        {
-            return "{tags:\"" + Tags() + "\"}";
-        }
     }
 }
