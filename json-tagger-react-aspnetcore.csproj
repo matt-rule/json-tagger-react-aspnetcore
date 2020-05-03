@@ -10,6 +10,10 @@
     <RootNamespace>json_tagger_react_aspnetcore</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup>
+      <Nullable>enable</Nullable>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="3.0.3" />
   </ItemGroup>
