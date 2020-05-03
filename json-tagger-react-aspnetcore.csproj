@@ -7,7 +7,7 @@
     <IsPackable>false</IsPackable>
     <SpaRoot>ClientApp\</SpaRoot>
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
-    <RootNamespace>json_tagger_asp_net_core</RootNamespace>
+    <RootNamespace>json_tagger_react_aspnetcore</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

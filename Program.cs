@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace json_tagger_asp_net_core
+namespace json_tagger_react_aspnetcore
 {
     public class Program
     {

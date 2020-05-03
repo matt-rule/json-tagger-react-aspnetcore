@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace json_tagger_asp_net_core
+namespace json_tagger_react_aspnetcore
 {
     public class Startup
     {
